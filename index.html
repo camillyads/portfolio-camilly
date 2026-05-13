@@ -212,18 +212,25 @@
       .iconbtn {
         width: 44px;
         height: 44px;
+        padding: 0;
         border-radius: 14px;
         border: 1px solid var(--stroke);
         background: rgba(255, 255, 255, 0.7);
         box-shadow: var(--shadow-soft);
         display: grid;
         place-items: center;
+        line-height: 0;
       }
 
       .iconbtn svg {
+        display: block;
         width: 18px;
         height: 18px;
         opacity: 0.72;
+      }
+
+      #menuBtn svg {
+        transform: translateY(1px);
       }
 
       .hero {
